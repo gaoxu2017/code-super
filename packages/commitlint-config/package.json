@@ -6,6 +6,15 @@
   "homepage": "",
   "license": "ISC",
   "main": "index.js",
+  "keywords":[
+    "code",
+    "commit",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoxu2017/code-super.git"
+  },
   "files": [
     "lib"
   ],

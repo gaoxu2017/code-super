@@ -4,6 +4,15 @@
   "description": "前端文档规范",
   "author": "gaoxu",
   "homepage": "",
+  "keywords": [
+    "code",
+    "markdown",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoxu2017/code-super.git"
+  },
   "license": "ISC",
   "main": "index.json",
   "files": [
