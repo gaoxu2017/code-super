@@ -3,6 +3,10 @@
   "private": true,
   "description": "前端编码规范工程化 ",
   "dependencies": {},
+    "keywords": [
+    "code",
+    "super"
+  ],
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "lerna": "^7.1.4",
