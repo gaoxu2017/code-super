@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-super",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "前端文档规范",
   "author": "gaoxu",
   "homepage": "",
@@ -10,7 +10,7 @@
     "lint"
   ],
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git+https://github.com/gaoxu2017/code-super.git"
   },
   "license": "ISC",
