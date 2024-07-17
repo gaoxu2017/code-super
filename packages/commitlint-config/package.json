@@ -1,12 +1,12 @@
 {
   "name": "commitlint-config-super",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "git 规范",
   "author": "gaoxu",
   "homepage": "",
   "license": "ISC",
   "main": "index.js",
-  "keywords":[
+  "keywords": [
     "code",
     "commit",
     "lint"
