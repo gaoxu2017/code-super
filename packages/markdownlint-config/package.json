@@ -10,14 +10,11 @@
     "lint"
   ],
   "repository": {
-    "type": "git",
+    "type": "git", 
     "url": "git+https://github.com/gaoxu2017/code-super.git"
   },
   "license": "ISC",
   "main": "index.json",
-  "files": [
-    "lib"
-  ],
   "peerDependencies": {
     "markdownlint": "^0.34.0"
   }
