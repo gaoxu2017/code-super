@@ -1,7 +1,7 @@
 {
   "name": "code-super",
   "private": true,
-  "description": "前端编码规范工程化",
+  "description": "前端编码规范工程化 ",
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
