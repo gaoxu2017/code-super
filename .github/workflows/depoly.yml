@@ -23,9 +23,8 @@ jobs:
       env:
           NODE_OPTIONS: '--max_old_space_size=4096 --openssl-legacy-provider'
 
-    - name: depoly
+    - name: Depoly
       uses: JamesIves/github-pages-deploy-action@4.1.3
-
       with:
         BRANCH: main-pages
         FOLDER: docs/.vuepress/dist
