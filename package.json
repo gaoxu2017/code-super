@@ -23,7 +23,7 @@
     "clean": "lerna clean && rm -rf node_modules",
     "test": "lerna run test",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress build docs",
     "deploy": "bash deploy.sh",
     "publish": "lerna publish",
     "lint": "markdownlint README.md",
