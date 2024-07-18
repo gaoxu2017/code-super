@@ -4,7 +4,7 @@ export default defineConfig4CustomTheme({
 	locales: {
 		'/': {
 			lang: 'zh-CN',
-			title: '印客学院',
+			title: '前端编码规范',
 			description: '前端编码规范工程化',
 		},
 	},
@@ -75,20 +75,20 @@ export default defineConfig4CustomTheme({
 				],
 			},
 		],
-		logo: '/img/logo.png',
+		// logo: '/img/logo.png',
 		repo: 'encode-studio-fe/fe-spec',
 		searchMaxSuggestions: 10,
 		docsDir: 'docs',
 		footer: {
 			createYear: 2023,
 			copyrightInfo:
-				'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
+				'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">githubs</a>',
 		},
 
 		extendFrontmatter: {
 			author: {
-				name: '澄怀',
-				link: 'https://github.com/encode-studio-fe/fe-sepc',
+				name: '高旭',
+				link: 'https://github.com/gaoxu2017/code-super.git',
 			},
 		},
 	},

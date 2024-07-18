@@ -53,6 +53,7 @@ features:
 
 ## :email: 联系
 
--   **GitHub**: <https://github.com/encode-studio-fe/fe-spec>
+-   **邮箱**: <Gaoxu13167316938@163.com>
+-   **GitHub**: <https://github.com/gaoxu2017/code-super.git>
 
 </br>
