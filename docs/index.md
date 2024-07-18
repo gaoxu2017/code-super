@@ -51,7 +51,7 @@ features:
 
 </br>
 
-## :email: 联系
+## :email: 联系lear
 
 -   **邮箱**: <Gaoxu13167316938@163.com>
 -   **GitHub**: <https://github.com/gaoxu2017/code-super.git>
