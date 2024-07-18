@@ -19,7 +19,7 @@ jobs:
       run: |
            npm i -g pnpm
            pnpm run init  
-           pnpm run build docs:build
+           pnpm run docs:build
       env:
           NODE_OPTIONS: '--max_old_space_size=4096'
 
