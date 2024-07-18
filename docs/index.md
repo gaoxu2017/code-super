@@ -3,7 +3,6 @@ home: true
 heroText: 印客学院
 tagline: 前端编码规范工程化
 actionText: 立刻进入 →
-actionLink: /coding/html.md
 
 features:
     - title: 完善的规范生态
@@ -51,9 +50,8 @@ features:
 
 </br>
 
-## :email: 联系lear
+## :email: 联系
 
--   **邮箱**: <Gaoxu13167316938@163.com>
--   **GitHub**: <https://github.com/gaoxu2017/code-super.git>
+-   **GitHub**: <https://github.com/encode-studio-fe/fe-spec>
 
 </br>
