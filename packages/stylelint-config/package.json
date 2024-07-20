@@ -1,25 +1,29 @@
 {
-  "name": "markdownlint-config-super",
+  "name": "stylelint-config-super",
   "version": "0.0.7",
-  "description": "文档规范",
+  "description": "前端CSS规范",
   "author": "gaoxu",
   "homepage": "https://github.com/gaoxu2017/code-super#readme",
+  "license": "ISC",
+  "main": "index.js",
   "keywords": [
-    "code",
-    "markdown",
+    "style",
     "lint",
     "super"
   ],
+  "peerDependencies": {
+    "stylelint-scss": ">=2.0.0",
+    "stylelint": ">=8.3.0"
+  },
+  "devDependencies": {  
+    "stylelint": "^16.7.0",
+    "stylelint-scss":"6.4.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gaoxu2017/code-super.git"
   },
-  "license": "ISC",
-  "main": "index.json",
-  "peerDependencies": {
-    "markdownlint": "^0.34.0"
-  },
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/gaoxu2017/code-super/issues"
   }
 }
