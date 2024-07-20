@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-super",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "文档规范",
   "author": "gaoxu",
   "homepage": "https://github.com/gaoxu2017/code-super#readme",
@@ -19,7 +19,7 @@
   "peerDependencies": {
     "markdownlint": "^0.34.0"
   },
-    "bugs": {
+  "bugs": {
     "url": "https://github.com/gaoxu2017/code-super/issues"
   }
 }
