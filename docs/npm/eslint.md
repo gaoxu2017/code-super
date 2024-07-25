@@ -5,7 +5,7 @@ categories:
 tags:
   - 工程规范
 author:
-  name: 高旭
+  name: gaoxu
   link: https://gaoxu2017.github.io/code-super/
 ---
 
