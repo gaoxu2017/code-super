@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-super",
+  "version": "0.0.8",
+  "description": "> TODO: description",
+  "author": "gaoxu <Gaoxu13167316938@163.com>",
+  "homepage": "https://github.com/gaoxu2017/code-super#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "eslint",
+    "typescript",
+    "node",
+    "react",
+    "vue",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoxu2017/code-super.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/eslint-config.test.js",
+    "lint": "eslint ./"
+  },
+  "bugs": {
+    "url": "https://github.com/gaoxu2017/code-super/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.24.8",
+    "@babel/preset-react": "^7.16.0",
+    "@eslint/js": "^9.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.7.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.3.0",
+    "lodash": "^4.17.21",
+    "typescript": "^4.1.2",
+    "vue-eslint-parser": "^7.3.0"
+  }
+}

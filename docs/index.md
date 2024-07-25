@@ -6,10 +6,10 @@ actionText: 开始阅读 →
 actionLink: /coding/html.md
 
 features:
-    - title: 完善的规范生态
-      details: 支持对全部前端配置实现一键接入、一键扫描、一键修复、一键升级
-    - title: 支持 Typescript
-      details: 提供完整的类型注释，帮助您从 0~1 掌握完整的前端规范化
+  - title: 完善的规范生态
+    details: 支持对全部前端配置实现一键接入、一键扫描、一键修复、一键升级
+  - title: 支持 Typescript
+    details: 提供完整的类型注释，帮助您从 0~1 掌握完整的前端规范化
 ---
 
 ## :star: 设计目的
@@ -34,13 +34,13 @@ features:
 
 首先引入了多个业界流行的 `Linter` 作为规约文档的配套工具，并根据规约内容定制了对应的规则包，它们包括：
 
-| 规约 | Lint 工具 | NPM包 |
-| ------------- | ----------- | ---- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br /> Node 编码规范      | [Eslint](https://eslint.org/) | [eslint-config-super](https://eslint.org/) |
-| CSS 编码规范      |   [styleLint](https://stylelint.io/)   |   [stylelint-config-super](https://www.npmjs.com/package/stylelint-config-super) |
-| git规范 |   [commitlint](https://commitlint.js.org/)   |   [commitlint-config-super](https://www.npmjs.com/package/commitlint-config-super) |
-| 文档规范 |   [markdownlint](https://github.com/igorshubovych/markdownlint)   |   [markdownlint-config-super](https://www.npmjs.com/package/markdownlint-config-super) |
-| Eslint 插件 | Eslint Plugin（开发中...敬请期待） | eslint-plugin-super（预发布的包） |
+| 规约                                                               | Lint 工具                                                     | NPM 包                                                                               |
+| ------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br /> Node 编码规范 | [Eslint](https://eslint.org/)                                 | [eslint-config-super](https://eslint.org/)                                           |
+| CSS 编码规范                                                       | [styleLint](https://stylelint.io/)                            | [stylelint-config-super](https://www.npmjs.com/package/stylelint-config-super)       |
+| git 规范                                                           | [commitlint](https://commitlint.js.org/)                      | [commitlint-config-super](https://www.npmjs.com/package/commitlint-config-super)     |
+| 文档规范                                                           | [markdownlint](https://github.com/igorshubovych/markdownlint) | [markdownlint-config-super](https://www.npmjs.com/package/markdownlint-config-super) |
+| Eslint 插件                                                        | Eslint Plugin（开发中...敬请期待）                            | [eslint-plugin-super](https://www.npmjs.com/package/eslint-plugin-super)             |
 
 <br />
 
