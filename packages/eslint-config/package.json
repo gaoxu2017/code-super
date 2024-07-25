@@ -16,8 +16,7 @@
     "node",
     "react",
     "vue",
-    "lib",
-    "lint"
+    "lib"
   ],
   "repository": {
     "type": "git",
