@@ -1,19 +1,6 @@
----
-title: code-eslint-config-super
-categories:
-  - 工程规范
-tags:
-  - 工程规范
-author:
-  name: gaoxu
-  link: https://gaoxu2017.github.io/code-super/
----
+> JavaScript TypeScript Node 规范
 
 # code-eslint-config-super
-
-::: tip
-JavaScript TypeScript 规范
-:::
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、等多种项目类型。
 
