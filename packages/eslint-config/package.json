@@ -16,7 +16,8 @@
     "node",
     "react",
     "vue",
-    "lib"
+    "lib",
+    "lint"
   ],
   "repository": {
     "type": "git",
@@ -45,5 +46,6 @@
     "lodash": "^4.17.21",
     "typescript": "^4.1.2",
     "vue-eslint-parser": "^7.3.0"
-  }
+  },
+  "gitHead": "5afdcb958e413c3f645df96e4d1bb4582c4ecd2d"
 }
