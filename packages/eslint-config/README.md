@@ -11,7 +11,7 @@ author:
 
 # code-eslint-config-super
 
-:::tip
+::: tip
 JavaScript TypeScript 规范
 :::
 
