@@ -2,14 +2,14 @@
  * @Author: gaoxu Gaoxu13167316938@163.com
  * @Date: 2024-07-19 16:27:47
  * @LastEditors: gaoxu Gaoxu13167316938@163.com
- * @LastEditTime: 2024-07-25 22:31:17
+ * @LastEditTime: 2024-07-25 23:17:31
  * @FilePath: \engineeringRules\docs\npm\eslint.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 
 ---
 
-title: eslint-config-super
+title: code-eslint-config-super
 categories:
 
 - 工程规范
@@ -21,7 +21,7 @@ categories:
 
 ---
 
-# eslint-config-super
+# code-eslint-config-super
 
 :::tip
 JavaScript TypeScript 规范
@@ -29,7 +29,7 @@ JavaScript TypeScript 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、等多种项目类型。
 
-## JavaScript 项目 - eslint-config-super
+## JavaScript 项目 - code-eslint-config-super
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 
@@ -42,18 +42,18 @@ JavaScript TypeScript 规范
 ### 安装
 
 ```shell
-npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import
+npm i -D code-eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super"]
+  "extends": ["code-eslint-config-super"]
 }
 ```
 
-## JavaScript + React 项目 - eslint-config-super/react
+## JavaScript + React 项目 - code-eslint-config-super/react
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
@@ -69,18 +69,18 @@ npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-impo
 ### 安装
 
 ```shell
-npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
+npm i -D code-eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super/react"]
+  "extends": ["code-eslint-config-super/react"]
 }
 ```
 
-## JavaScript + Vue 项目 - eslint-config-super/vue
+## JavaScript + Vue 项目 - code-eslint-config-super/vue
 
 针对 `JS Vue` 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
 
@@ -95,18 +95,18 @@ npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-impo
 ### 安装
 
 ```shell
-npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
+npm i -D code-eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super/vue"]
+  "extends": ["code-eslint-config-super/vue"]
 }
 ```
 
-## TypeScript 项目 - eslint-config-super/typescript
+## TypeScript 项目 - code-eslint-config-super/typescript
 
 针对未使用 `React` 或 `Vue` 的 `TypeScript` 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -120,14 +120,14 @@ npm i -D eslint-config-super @babel/core @babel/eslint-parser eslint-plugin-impo
 ### 安装
 
 ```shell
-npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
+npm i -D code-eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super/typescript"]
+  "extends": ["code-eslint-config-super/typescript"]
 }
 ```
 
@@ -135,14 +135,14 @@ npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint
 
 ```json
 {
-  "extends": "eslint-config-super/typescript",
+  "extends": "code-eslint-config-super/typescript",
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   }
 }
 ```
 
-## TypeScript + React 项目 - eslint-config-super/typescript/react
+## TypeScript + React 项目 - code-eslint-config-super/typescript/react
 
 针对 `TS React` 项目，继承了 `JS React` 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -159,18 +159,18 @@ npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint
 ### 安装
 
 ```
-npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
+npm i -D code-eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super/typescript/react"]
+  "extends": ["code-eslint-config-super/typescript/react"]
 }
 ```
 
-## TypeScript + Vue 项目 - eslint-config-super/typescript/vue
+## TypeScript + Vue 项目 - code-eslint-config-super/typescript/vue
 
 针对 `TS Vue` 项目，继承了 `JS Vue` 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 `parser`。
 
@@ -186,14 +186,14 @@ npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint
 ### 安装
 
 ```shell
-npm i -D eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
+npm i -D code-eslint-config-super @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["eslint-config-super/typescript/vue"]
+  "extends": ["code-eslint-config-super/typescript/vue"]
 }
 ```
 
@@ -213,7 +213,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ```json
 {
-  "extends": ["eslint-config-super/typescript/react", "prettier"]
+  "extends": ["code-eslint-config-super/typescript/react", "prettier"]
 }
 ```
 

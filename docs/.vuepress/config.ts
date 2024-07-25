@@ -39,7 +39,7 @@ export default defineConfig4CustomTheme({
           { text: 'markdownlint-config-super', link: '/npm/markdownlint.md' },
           { text: 'commitlint-config-super', link: '/npm/commitlint.md' },
           { text: 'stylelint-config-super', link: '/npm/stylelint.md' },
-          { text: 'eslint-config-super', link: '/npm/eslint.md' },
+          { text: 'code-eslint-config-super', link: '/npm/eslint.md' },
         ],
       },
       {
@@ -92,7 +92,7 @@ export default defineConfig4CustomTheme({
           { title: 'markdownlint-config-super', path: '/npm/markdownlint.md' },
           { title: 'commitlint-config-super', path: '/npm/commitlint.md' },
           { title: 'stylelint-config-super', path: '/npm/stylelint.md' },
-          { title: 'eslint-config-super', path: '/npm/eslint.md' },
+          { title: 'code-eslint-config-super', path: '/npm/eslint.md' },
         ],
       },
       {

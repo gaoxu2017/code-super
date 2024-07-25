@@ -9,7 +9,7 @@ author:
   link: gaoxu2017.github.io/code-super/
 ---
 
-# eslint-config-super
+# code-eslint-config-super
 
 :::tip
 Git 规范
