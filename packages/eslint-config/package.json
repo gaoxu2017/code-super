@@ -6,10 +6,6 @@
   "homepage": "https://github.com/gaoxu2017/code-super#readme",
   "license": "ISC",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
     "eslint",
     "typescript",
@@ -23,7 +19,6 @@
     "url": "git+https://github.com/gaoxu2017/code-super.git"
   },
   "scripts": {
-    "test": "node ./__tests__/eslint-config.test.js",
     "lint": "eslint ./"
   },
   "bugs": {
@@ -45,6 +40,5 @@
     "lodash": "^4.17.21",
     "typescript": "^4.1.2",
     "vue-eslint-parser": "^7.3.0"
-  },
-  "gitHead": "5afdcb958e413c3f645df96e4d1bb4582c4ecd2d"
+  }
 }
