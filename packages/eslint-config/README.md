@@ -4,7 +4,7 @@
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、等多种项目类型。
 
-## JavaScript 项目 - encode-fe-eslint-config
+## JavaScript 项目 - code-eslint-config-super
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 
@@ -28,7 +28,7 @@ npm i -D code-eslint-config-super @babel/core @babel/eslint-parser eslint-plugin
 }
 ```
 
-## JavaScript + React 项目 - encode-fe-eslint-config/react
+## JavaScript + React 项目 - code-eslint-config-super/react
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
