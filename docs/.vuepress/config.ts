@@ -42,10 +42,6 @@ export default defineConfig4CustomTheme({
           { text: 'code-eslint-config-super', link: '/npm/eslint.md' },
         ],
       },
-      {
-        text: '脚手架',
-        items: [{ text: 'code-super-cli', link: '/cli/code-super-cli.md' }],
-      },
     ],
     sidebar: [
       {
@@ -94,10 +90,6 @@ export default defineConfig4CustomTheme({
           { title: 'stylelint-config-super', path: '/npm/stylelint.md' },
           { title: 'code-eslint-config-super', path: '/npm/eslint.md' },
         ],
-      },
-      {
-        title: '脚手架',
-        children: [{ title: 'code-super-cli', path: 'cli/code-super-cli.md' }],
       },
     ],
   },
