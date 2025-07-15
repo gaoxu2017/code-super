@@ -3,9 +3,9 @@
   "private": true,
   "description": "前端编码规范工程化 ",
   "license": "ISC",
-  "author":"gaoxu",
+  "author": "gaoxu",
   "dependencies": {},
-    "keywords": [
+  "keywords": [
     "code",
     "super"
   ],
@@ -19,7 +19,7 @@
     "markdownlint": "0.34.0",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-plugin-immersive-music-player":"1.2.4"
+    "vuepress-plugin-immersive-music-player": "1.2.4"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -31,8 +31,7 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "publish": "lerna publish",
-    "lint": "markdownlint README.md",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "lint": "markdownlint README.md"
   },
   "publishConfig": {
     "access": "public",
