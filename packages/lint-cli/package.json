@@ -5,12 +5,12 @@
   "author": "gaoxu <Gaoxu13167316938@163.com>",
   "homepage": "https://github.com/gaoxu2017/code-super#readme",
   "license": "ISC",
-  "bin":"./lib/cli.js",
+  "bin": "./lib/cli.js",
   "main": "./lib/index.js",
   "files": [
     "lib"
   ],
-    "keywords": [
+  "keywords": [
     "encode",
     "lint",
     "cli"
@@ -23,7 +23,7 @@
     "url": "git+https://github.com/gaoxu2017/code-super.git"
   },
   "scripts": {
-    "dev":"npm run copyfiles && tsc -w",
+    "dev": "npm run copyfiles && tsc -w",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "test": "npm run build && jest",
     "coverage": "nyc jest --silent --forceExit",

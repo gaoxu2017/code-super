@@ -1,12 +1,13 @@
-import {sync as commandExistsSync} from 'command-exists';
+import { sync as commandExistsSync } from 'command-exists';
 
 /**
- * 判断是否是npm
+ * npm 类型
  */
+
 const promise: Promise<'npm' | 'pnpm'> = new Promise((resolve) => {
   if (!commandExistsSync('pnpm')) return resolve('npm');
 
   resolve('pnpm');
-})
+});
 
-export default promise
+export default promise;

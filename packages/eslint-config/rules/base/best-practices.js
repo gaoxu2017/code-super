@@ -5,10 +5,10 @@
  * @LastEditTime: 2024-07-25 10:12:09
  * @FilePath: \engineeringRules\packages\eslint-config\rules\base\best-practices.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
-   @http: https://eslint.org/docs/v8.x/rules/ 
+   @http: https://eslint.org/docs/v8.x/rules/
 */
 module.exports = {
-  rules:{
+  rules: {
     // 强制 getter 和 setter 在对象中成对出现
     'accessor-pairs': 'off',
 
@@ -286,5 +286,5 @@ module.exports = {
 
     // 使用 color === 'red' 而不是 'red' === color
     yoda: 'warn',
-  }
-}
+  },
+};

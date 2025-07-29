@@ -1,12 +1,9 @@
+import initAction from './actions/init';
+import type { InitOptions } from './type';
 
-import type {InitOptions} from "./type"
-import initAction from "./actions/init"
-
-type IInitOptions = Omit<InitOptions,"checkVersionUpdate">
-
-export const init = async (options:IInitOptions) => {
+export const init = async (option: InitOptions) => {
   return await initAction({
-    ...options,
-    checkVersionUpdate:false
-  })
-}
+    ...option,
+    checkVersionUpdate: false,
+  });
+};

@@ -29,7 +29,7 @@ const mergeVSCodeConfig = (filepath: string, content: string) => {
         }
       }),
       null,
-      2,
+      2
     );
   } catch (e) {
     return '';

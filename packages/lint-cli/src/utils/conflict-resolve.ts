@@ -4,7 +4,7 @@ import glob from 'glob';
 import inquirer from 'inquirer';
 import log from './log';
 import { PKG_NAME } from './constants';
-import type { PKG } from '../types';
+import type { PKG } from '../type';
 
 // 精确移除依赖
 const packageNamesToRemove = [
@@ -40,7 +40,7 @@ const checkUselessConfig = (cwd: string): string[] => {
     .concat(glob.sync('.stylelintrc?(.@(yaml|yml|json))', { cwd }))
     .concat(glob.sync('.markdownlint@(rc|.@(yaml|yml|jsonc))', { cwd }))
     .concat(
-      glob.sync('.prettierrc?(.@(cjs|config.js|config.cjs|yaml|yml|json|json5|toml))', { cwd }),
+      glob.sync('.prettierrc?(.@(cjs|config.js|config.cjs|yaml|yml|json|json5|toml))', { cwd })
     )
     .concat(glob.sync('tslint.@(yaml|yml|json)', { cwd }))
     .concat(glob.sync('.kylerc?(.@(yaml|yml|json))', { cwd }));
@@ -62,12 +62,12 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
   const pkg: PKG = fs.readJSONSync(pkgPath);
   const dependencies = [].concat(
     Object.keys(pkg.dependencies || {}),
-    Object.keys(pkg.devDependencies || []),
+    Object.keys(pkg.devDependencies || [])
   );
   const willRemovePackage = dependencies.filter(
     (name) =>
       packageNamesToRemove.includes(name) ||
-      packagePrefixesToRemove.some((prefix) => name.startsWith(prefix)),
+      packagePrefixesToRemove.some((prefix) => name.startsWith(prefix))
   );
   const uselessConfig = checkUselessConfig(cwd);
   const reWriteConfig = checkReWriteConfig(cwd);

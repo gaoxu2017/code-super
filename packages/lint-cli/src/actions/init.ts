@@ -1,33 +1,35 @@
-import inquirer from "inquirer"
-import {PROJECT_TYPES,PKG_NAME} from "../utils/constants"
-import conflictResolve from '../utils/conflict-resolve';
-import generateTemplate from "../utils/generate-template"
-import path from "path"
-import spawn from 'cross-spawn';
+import path from 'path';
 import fs from 'fs-extra';
+import inquirer from 'inquirer';
+import spawn from 'cross-spawn';
 import update from './update';
 import npmType from '../utils/npm-type';
 import log from '../utils/log';
-import type { InitOptions,PKG } from "../type";
+import conflictResolve from '../utils/conflict-resolve';
+import generateTemplate from '../utils/generate-template';
+import { PROJECT_TYPES, PKG_NAME } from '../utils/constants';
+import type { InitOptions, PKG } from '../type';
+
 let step = 0;
 
-/*
-* 选择项目框架和语言
-*/
-
-const chooseEslintType = async() :Promise<string> => {
+/**
+ * 选择项目语言和框架
+ */
+const chooseEslintType = async (): Promise<string> => {
   const { type } = await inquirer.prompt({
-    type:"list",
-    name: "type",
-    message: `Step ${++step}: 请选择项目框架(VUE/TS)和语言(React/Vue)`,
-    choices: PROJECT_TYPES
-  })
-  return type
-}
+    type: 'list',
+    name: 'type',
+    message: `Step ${++step}. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：`,
+    choices: PROJECT_TYPES,
+  });
 
-/*
-* 选择是否启动 stylelint
-*/
+  return type;
+};
+
+/**
+ * 选择是否启用 stylelint
+ * @param defaultValue
+ */
 const chooseEnableStylelint = async (defaultValue: boolean): Promise<boolean> => {
   const { enable } = await inquirer.prompt({
     type: 'confirm',
@@ -65,51 +67,53 @@ const chooseEnablePrettier = async (): Promise<boolean> => {
   });
 
   return enable;
-}
+};
 
-export default async(options:InitOptions) => {
-  const cwd = options.cwd || process.cwd()
+export default async (options: InitOptions) => {
+  const cwd = options.cwd || process.cwd();
   const isTest = process.env.NODE_ENV === 'test';
-  const checkVersionUpdate = options.checkVersionUpdate || false
-  const disableNpmInstall = options.disableNpmInstall || false
-  const config:Record<string,any> = {}
-  const pkgPath = path.resolve(cwd,"package.json");
-  let pkg: PKG = fs.readJSONSync(pkgPath)
+  const checkVersionUpdate = options.checkVersionUpdate || false;
+  const disableNpmInstall = options.disableNpmInstall || false;
+  const config: Record<string, any> = {};
+  const pkgPath = path.resolve(cwd, 'package.json');
+  let pkg: PKG = fs.readJSONSync(pkgPath);
 
-  //版本检查
-  if(!isTest && checkVersionUpdate) {
-    await update(false)
+  // 版本检查
+  if (!isTest && checkVersionUpdate) {
+    console.log(isTest, checkVersionUpdate);
+    await update(false);
   }
 
-  //初始化 `enableEslint`，默认为 true，无需让用户选择
-  if(typeof options.enableESLint === "boolean") {
-    config.enableEslint = options.enableESLint
-  } else{
-    config.enableEslint = true
+  // 初始化 `enableESLint`，默认为 true，无需让用户选择
+  if (typeof options.enableESLint === 'boolean') {
+    config.enableESLint = options.enableESLint;
+  } else {
+    config.enableESLint = true;
   }
 
-  //初始化 `eslintType`
+  // 初始化 `eslintType`
+  console.log(options.eslintType + '测试');
   if (options.eslintType && PROJECT_TYPES.find((choice) => choice.value === options.eslintType)) {
     config.eslintType = options.eslintType;
-  }else{
-    config.eslintType = await chooseEslintType()
+  } else {
+    config.eslintType = await chooseEslintType();
   }
 
-    // 初始化 `enableStylelint`
+  // 初始化 `enableStylelint`
   if (typeof options.enableStylelint === 'boolean') {
     config.enableStylelint = options.enableStylelint;
   } else {
     config.enableStylelint = await chooseEnableStylelint(!/node/.test(config.eslintType));
   }
 
-    // 初始化 `enableMarkdownlint`
+  // 初始化 `enableMarkdownlint`
   if (typeof options.enableMarkdownlint === 'boolean') {
     config.enableMarkdownlint = options.enableMarkdownlint;
   } else {
     config.enableMarkdownlint = await chooseEnableMarkdownLint();
   }
 
-    // 初始化 `enablePrettier`
+  // 初始化 `enablePrettier`
   if (typeof options.enablePrettier === 'boolean') {
     config.enablePrettier = options.enablePrettier;
   } else {
@@ -121,14 +125,10 @@ export default async(options:InitOptions) => {
     pkg = await conflictResolve(cwd, options.rewriteConfig);
     log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
 
-    if(!disableNpmInstall){
+    if (!disableNpmInstall) {
       log.info(`Step ${++step}. 安装依赖`);
       const npm = await npmType;
-      spawn.sync(
-        npm,
-        ['i', '-D', PKG_NAME],
-        { stdio: 'inherit', cwd },
-      );
+      spawn.sync(npm, ['i', '-D', PKG_NAME], { stdio: 'inherit', cwd });
       log.success(`Step ${step}. 安装依赖成功 :D`);
     }
   }
@@ -162,4 +162,4 @@ export default async(options:InitOptions) => {
   // 完成信息
   const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');
   log.success(logs);
-}
+};
